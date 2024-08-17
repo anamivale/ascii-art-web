@@ -27,6 +27,8 @@ func main() {
 
 	// Handle the root URL with the error handling middleware and the main handler
 	http.Handle("/ascii-art", ErrorHandlingMiddleware(http.HandlerFunc(Handler)))
+	http.Handle("/", ErrorHandlingMiddleware(http.HandlerFunc(Home)))
+	http.Handle("/download", ErrorHandlingMiddleware(http.HandlerFunc(Download)))
 
 	http.Handle("/about", ErrorHandlingMiddleware(http.HandlerFunc(AboutHandler)))
 
