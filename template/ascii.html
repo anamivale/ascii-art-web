@@ -11,17 +11,18 @@
 </head>
 <body>
   <form id="downloadForm" method="get" action="/download">
+    <h1>Ascii Art</h1>
     <pre id="outputPre">{{.Output}}</pre>
     <input type="hidden" id="outputField" name="output" />
     <div class="foot">
       <div class="format">
-        <h5>Select file format</h5>
+        <h3>Select file format</h5>
         <select name="format" id="format" required>
           <option value=".html">Html File</option>
           <option value=".txt">Text File</option>
           <option value=".md">Markdown File</option>
         </select>
-      </div>
+      </div >
       
       <button name="export" type="submit">Download Art</button>
     </div>
@@ -33,7 +34,6 @@
     document
       .getElementById("downloadForm")
       .addEventListener("submit", function () {
-        // Copy the content of the <pre> tag into the hidden input field
         var preContent = document.getElementById("outputPre").innerText;
         document.getElementById("outputField").value = preContent;
       });
