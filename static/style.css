@@ -1,0 +1,138 @@
+body {
+  box-sizing: border-box;
+  background-color: #6694ba;
+  color: #ffffff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.form {
+  background-color: #053363;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.banners {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #00468c;
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.output {
+  background-color: #ffffff;
+  color: #0c011a;
+  width: 90vw;
+  max-width: 1200px;
+  overflow: auto;
+  padding: 10px;
+  height: 300px;
+  border: 1px solid #00468c;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.bodyTitle {
+  margin: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inputText {
+  width: 90vw;
+  max-width: 700px;
+  height: 150px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border: 1px solid #00468c;
+  color: #053363;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px;
+  background-color: #00468c;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #053363;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.about:hover {
+  background-color: #6694ba;
+}
+
+@media screen and (max-width: 900px) {
+  #inputText {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .form {
+    padding: 10px;
+  }
+  #inputText {
+    width: 90vw;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banners {
+    font-size: 16px;
+  }
+  #inputText {
+    width: 90vw;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .banner-text {
+    align-items: flex-start;
+  }
+  #inputText {
+    width: 90vw;
+    height: 80px;
+  }
+}

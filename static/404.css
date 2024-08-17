@@ -1,0 +1,96 @@
+/* Reset default margins and paddings */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6694BA; /* Light blue background */
+    color: #FFFFFF; /* White text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #053363; /* Darker blue background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 400px; /* Set a max width for larger screens */
+}
+
+.error-code {
+    font-size: 100px;
+    font-weight: bold;
+    color: #FFFFFF; /* White color for the error code */
+}
+
+.error-message {
+    font-size: 20px;
+    color: #FFFFFF; /* White color for the error message */
+    margin: 15px 0;
+}
+
+.back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #FFFFFF; /* White text color */
+    background-color: #00468C; /* Dark blue button background */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-home:hover {
+    background-color: #003455; /* Slightly darker blue on hover */
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Take up more width on smaller screens */
+        padding: 15px; 
+    }
+
+    .error-code {
+        font-size: 80px; 
+    }
+
+    .error-message {
+        font-size: 18px; 
+        margin: 10px 0;
+    }
+
+    .back-home {
+        padding: 8px 16px; 
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 95%; /* Take up even more width on very small screens */
+        padding: 10px; 
+    }
+
+    .error-code {
+        font-size: 60px; 
+    }
+
+    .error-message {
+        font-size: 16px; 
+        margin: 5px 0;
+    }
+
+    .back-home {
+        padding: 6px 12px; 
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .header,
+  .footer {
+    background: #00468c;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .main-content {
+    padding: 20px;
+    background: #fff;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .main-content h1 {
+    color: #053363;
+  }
+  .main-content p {
+    margin-bottom: 20px;
+  }
+  .main-content h2 {
+    color: #00468c;
+  }
+  .authors,
+  .usage,
+  .implementation-details {
+    margin-bottom: 20px;
+  }
+  .authors ul,
+  .usage ul {
+    list-style: none;
+    padding: 0;
+  }
+  .authors li,
+  .usage li {
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid #00468c;
+  }
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  }

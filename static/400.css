@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #6694ba; 
+  color: #471616;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  width: 400px; /* Set a max width for larger screens */
+}
+
+h1 {
+  color: #00468c;
+  font-size: 2.5em; /* Reduced font size for better responsiveness */
+}
+
+p {
+  color: #053363;
+  font-size: 1.1em; 
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 0.9em; /* Slightly smaller font size for smaller screens */
+  color: #6694ba;
+}
+
+.error-image {
+  width: 80px; /* Adjust image size for better responsiveness */
+  margin-bottom: 20px;
+}
+
+.back-link {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00468c;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.back-link:hover {
+  background-color: #053363;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 600px) {
+  .error-container {
+    width: 90%; 
+    padding: 10px; 
+  }
+
+  h1 {
+    font-size: 2em; 
+  }
+
+  p {
+    font-size: 1em; 
+  }
+
+  .contact-info {
+    font-size: 0.8em; 
+  }
+
+  .error-image {
+    width: 60px; 
+  }
+
+  .back-link {
+    padding: 8px 16px; 
+  }
+}
+
+@media (max-width: 400px) {
+  .error-container {
+    width: 95%; 
+    padding: 5px; 
+  }
+
+  h1 {
+    font-size: 1.8em; 
+  }
+
+  p {
+    font-size: 0.9em; 
+  }
+
+  .contact-info {
+    font-size: 0.7em; 
+  }
+
+  .error-image {
+    width: 50px; 
+  }
+
+  .back-link {
+    padding: 6px 12px; 
+  }
+}

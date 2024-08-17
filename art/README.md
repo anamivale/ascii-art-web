@@ -1,5 +1,5 @@
 # ASCII-ART-WEB PROGRAM
-
+=============
 Ascii-art-web is an improved implementation of the Ascii-art program.Ascii-art-web consists in creating and running a server, in which it will be possible to use a web GUI (graphical user interface) version to input and display the art in ascii format.
 Ascii-art is a program which consists in receiving a string as an argument and outputting the string in a graphic representation using ASCII. Time to write big.
 
@@ -19,7 +19,7 @@ To run the code, in the terminal, run
   This will prompt the program to run and execute on http://localhost:1024
   Open the web browser and in the search bar, search and load [localhost:1024].
 
-You will get be provided a user interface where you will input your text, select an ascii art format of your choice among the three available options([standard], [thinkertoy] and [shadow]).
+You will get be provided a user interface where you will input your text, select an ascii art format of your choice among the three available options([standard.txt], [thinkertoy.txt] and [shadow.txt]).
 After selecting the desired ascii art format, click generate to get your output.
 
 <img src="../screenshot.png">

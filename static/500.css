@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #6694ba; /* Primary background color */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%; /* Adjust for smaller screens */
+  width: 400px; /* Default width for larger screens */
+}
+
+h1 {
+  color: #00468c;
+  font-size: 2.5em; 
+}
+
+p {
+  color: #053363;
+  font-size: 1.1em; 
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 0.9em; 
+  color: #6694ba;
+}
+
+.error-image {
+  width: 80px; 
+  margin-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 600px) {
+  .error-container {
+    width: 90%; 
+    padding: 15px; 
+  }
+
+  h1 {
+    font-size: 2em; 
+  }
+
+  p {
+    font-size: 1em; 
+  }
+
+  .contact-info {
+    font-size: 0.8em; 
+  }
+
+  .error-image {
+    width: 60px; 
+  }
+}
+
+@media (max-width: 400px) {
+  .error-container {
+    width: 95%; 
+    padding: 10px; 
+  }
+
+  h1 {
+    font-size: 1.8em; 
+  }
+
+  p {
+    font-size: 0.9em; 
+  }
+
+  .contact-info {
+    font-size: 0.7em; 
+  }
+
+  .error-image {
+    width: 50px; 
+  }
+}
