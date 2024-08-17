@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Ascii-art-web</title>
+  </head>
+  <body>
+    <div class="bodyTitle">
+      <div class="header">
+        <a href="/about" class="about">About</a>
+      </div>
+      <form class="form" method="post" action="/ascii-art">
+        <h1>Ascii-art Generator</h1>
+        <div class="banner-text">
+          <div class="text">
+            <label for="inputText">Enter text here:</label> <br />
+            <textarea name="inputText" id="inputText">{{.InputText}}</textarea>
+          </div>
+          <div class="banners">
+            <div class="sbanner">Select a banner here</div>
+            <div class="one">
+              <input type="radio" name="banner" id="standard" value="standard"
+              {{if eq .Banner "standard"}}checked{{end}} />
+              <label for="standard">Standard</label>
+            </div>
+            <div class="two">
+              <input type="radio" name="banner" id="thinkertoy"
+              value="thinkertoy" {{if eq .Banner "thinkertoy"}}checked{{end}} />
+              <label for="thinkertoy">Thinkertoy</label>
+            </div>
+            <div class="three">
+              <input type="radio" name="banner" id="shadow" value="shadow" {{if
+              eq .Banner "shadow"}}checked{{end}} />
+              <label for="shadow">Shadow</label>
+            </div>
+          </div>
+        </div>
+        <div class="btn-submit">
+          <button type="submit" id="generateBtn">Generate</button>
+          <a style="display: none" id="dbtn" value="false"> export</a>
+        </div>
+      </form>
+      <!-- <div class="output">
+        <pre>{{.Output}}</pre>
+      </div> -->
+    </div>
+  </body>
+</html>
