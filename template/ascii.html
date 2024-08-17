@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="downloadForm" method="get" action="/download">
+      <pre id="outputPre">{{.Output}}</pre>
+      <input type="hidden" id="outputField" name="output" />
+      <select name="format" id="format">
+        <option value=".html">Html File</option>
+        <option value=".txt">Text File</option>
+        <option value=".md">Markdown File</option>
+      </select>
+      <button name="export" type="submit">Download Art</button>
+    </form>
+    <a href="/" class="back-home">Go to Homepage</a>
+
+    <script>
+      document
+        .getElementById("downloadForm")
+        .addEventListener("submit", function () {
+          // Copy the content of the <pre> tag into the hidden input field
+          var preContent = document.getElementById("outputPre").innerText;
+          document.getElementById("outputField").value = preContent;
+        });
+    </script>
+  </body>
+</html>
