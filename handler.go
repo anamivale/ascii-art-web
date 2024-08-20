@@ -115,7 +115,7 @@ func AboutHandler(w http.ResponseWriter, r *http.Request){
 }
 
 func Download(w http.ResponseWriter, r *http.Request) {
-	if !(r.URL.Path == "/download" || r.URL.Path == "/") {
+	if !(r.URL.Path == "/download") {
 		StatusNotFound(w)
 		return
 	}
