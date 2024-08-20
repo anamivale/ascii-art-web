@@ -22,8 +22,6 @@ To run the code, in the terminal, run
 You will get be provided a user interface where you will input your text, select an ascii art format of your choice among the three available options([standard], [thinkertoy] and [shadow]).
 After selecting the desired ascii art format, click generate to get your output.
 
-<img src="../screenshot.png">
-
 ## Implementation Details: Algorithm
 
 The ASCII Art Web application is designed to render text in different ASCII art styles (banners) based on user input. Below is a detailed description of the algorithm and logic used to implement the project:
