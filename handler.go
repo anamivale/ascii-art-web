@@ -17,6 +17,10 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		StatusNotFound(w)
 		return
 	}
+	if r.Method != http.MethodPost{
+		StatusMethodNotAllowed(w)
+		return
+	}
 
 	var goData Pagedata // Create an empty Pagedata struct to hold the form data and output
 
@@ -63,8 +67,13 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func Home(w http.ResponseWriter, r *http.Request){
+
 	if !(r.URL.Path=="/"){
 		StatusNotFound(w)
+		return
+	}
+	if r.Method != http.MethodGet{
+		StatusMethodNotAllowed(w)
 		return
 	}
 
@@ -95,7 +104,10 @@ func AboutHandler(w http.ResponseWriter, r *http.Request){
 		StatusNotFound(w)
 		return
 	}
-
+	if r.Method != http.MethodGet{
+		StatusMethodNotAllowed(w)
+		return
+	}
 	if _, err := os.Stat("template/about.html"); os.IsNotExist(err) {
 		StatusNotFound(w)
 		return
@@ -115,6 +127,10 @@ func AboutHandler(w http.ResponseWriter, r *http.Request){
 }
 
 func Download(w http.ResponseWriter, r *http.Request) {
+	if r.Method != http.MethodGet{
+		StatusMethodNotAllowed(w)
+		return
+	}
 	if !(r.URL.Path == "/download") {
 		StatusNotFound(w)
 		return

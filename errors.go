@@ -22,6 +22,19 @@ func StatusBadRequest(w http.ResponseWriter){
 		tmp.Execute(w, nil)
 		
 }
+func StatusMethodNotAllowed(w http.ResponseWriter){
+	w.WriteHeader(http.StatusMethodNotAllowed)
+	if _, err := os.Stat("template/405.html"); os.IsNotExist(err) {
+		StatusNotFound(w)
+		return
+	}
+		tmp, err := template.ParseFiles("template/405.html")
+		if err != nil {
+			http.Error(w, "Internal Server Error1", http.StatusInternalServerError)
+
+		}
+		tmp.Execute(w, nil)
+}
 func StatusNotFound(w http.ResponseWriter){
 	w.WriteHeader(http.StatusNotFound)
 	if _, err := os.Stat("template/404.html"); os.IsNotExist(err) {
